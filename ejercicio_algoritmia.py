@@ -1,6 +1,8 @@
-
-
 def capitalizar_palabra(palabra):
+    # * Comprobar que se este pasando un string
+    if type(palabra) != str: 
+        return "Se debe ingresar un string"
+    
     # * Tomar la primera letra y vovler mayuscula
     letra_upper = palabra[0].upper()
 
@@ -11,4 +13,4 @@ def capitalizar_palabra(palabra):
     return letra_upper
     
 
-print(capitalizar_palabra("python"))
+print(capitalizar_palabra(55))
